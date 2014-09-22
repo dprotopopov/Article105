@@ -1,0 +1,11 @@
+D:\Projects\Article105\Article105\bin\Debug\Article105.exe.config
+D:\Projects\Article105\Article105\bin\Debug\Article105.exe
+D:\Projects\Article105\Article105\bin\Debug\Article105.pdb
+D:\Projects\Article105\Article105\bin\Debug\MyLibrary.dll
+D:\Projects\Article105\Article105\bin\Debug\MyMath.dll
+D:\Projects\Article105\Article105\bin\Debug\MyLibrary.pdb
+D:\Projects\Article105\Article105\bin\Debug\MyMath.pdb
+D:\Projects\Article105\Article105\obj\Debug\Article105.csprojResolveAssemblyReference.cache
+D:\Projects\Article105\Article105\obj\Debug\Article105.exe
+D:\Projects\Article105\Article105\obj\Debug\Article105.pdb
+D:\Projects\Article105\Article105\bin\Debug\input.csv
