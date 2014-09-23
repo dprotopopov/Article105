@@ -1,5 +1,5 @@
-2014/09/22-17:34:44.130 5d4 Recovering log #3
-2014/09/22-17:34:44.132 5d4 Level-0 table #5: started
-2014/09/22-17:34:44.325 5d4 Level-0 table #5: 339206 bytes OK
-2014/09/22-17:34:44.463 5d4 Delete type=0 #3
-2014/09/22-17:34:44.464 5d4 Delete type=3 #2
+2014/09/23-16:34:25.594 5d4 Recovering log #9
+2014/09/23-16:34:25.598 5d4 Level-0 table #12: started
+2014/09/23-16:34:25.765 5d4 Level-0 table #12: 855911 bytes OK
+2014/09/23-16:34:25.949 5d4 Delete type=0 #9
+2014/09/23-16:34:25.950 5d4 Delete type=3 #7

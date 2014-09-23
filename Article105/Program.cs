@@ -50,7 +50,7 @@ namespace Article105
             using (StreamReader reader = File.OpenText(inputFileName))
             {
                 // регулярное выражение для разбора полей исходного файла
-                var regex = new Regex(@"\s*(?<from>[^;]+)\s*;\s*(?<to>[^;]+)\s*;\s*(?<value>\d+[,.]\d*)\s*");
+                var regex = new Regex(@"\s*(?<from>[^;]+)\s*;\s*(?<to>[^;]+)\s*;\s*(?<value>\d+([,.]\d*)?)\s*");
                 for (string line = reader.ReadLine();; line = reader.ReadLine())
                 {
                     lines++;
@@ -125,8 +125,8 @@ namespace Article105
                     groupList[j - i].AddRange(groupList[j]);
                     groupList.RemoveAt(j);
                     Debug.WriteLine("Группа {0} присоеденена к группе {1}", j, j - i);
-                    i = groupList.Count - 1;
-                    j = groupList.Count;
+                    i = groupList.Count;
+                    break;
                 }
             }
             Console.WriteLine("Обнаружено {0} групп", groupList.Count);
@@ -215,14 +215,14 @@ namespace Article105
 
                     // Проверка выходных данных
 #if DEBUG
-                    for (int i = 0; i < n; i++)
-                    {
-                        for (int j = 0; j < n; j++)
-                        {
-                            if (i == j) continue;
-                            Debug.Assert(c[i][j] >= 0.0 - epsilon && c[i][j] <= 1.0 + epsilon);
-                        }
-                    }
+                    //for (int i = 0; i < n; i++)
+                    //{
+                    //    for (int j = 0; j < n; j++)
+                    //    {
+                    //        if (i == j) continue;
+                    //        Debug.Assert(c[i][j] >= 0.0 - epsilon && c[i][j] <= 1.0 + epsilon);
+                    //    }
+                    //}
 #endif
 
                     // Выгрузка ненулевых элементов обратной матрицы в файл
