@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using MyLibrary.Collections;
-using MyMath;
+using MyMath.Double;
 using Double = MyLibrary.Types.Double;
 using Int32 = MyLibrary.Types.Int32;
 
@@ -22,7 +22,7 @@ namespace Article105
             double epsilon = 0.0000000001;
 
             var nodeList = new StackListQueue<string>();
-            var matrix = new Matrix<double>();
+            var matrix = new DoubleMatrix();
 
             // Определение параметров программы
             for (int i = 0; i < args.Length; i++)
@@ -61,7 +61,7 @@ namespace Article105
                         i = nodeList.Count;
                         if (!nodeList.Any())
                         {
-                            matrix.Add(new Vector<double> {0.0});
+                            matrix.Add(new DoubleVector {0.0});
                         }
                         else
                         {
@@ -114,22 +114,22 @@ namespace Article105
             for (int i = 0; i < total; i++) groupList.Add(new StackListQueue<int> {i});
             for (int i = groupList.Count - 1; i > 0; i--)
             {
-                for (int j = groupList.Count - 1; j >= i; j--)
+                for (int j = i - 1; j >= 0; j--)
                 {
                     // Проверяем существование путей из одной группы в другую группу
-                    if (Matrix<double>.IsZero(matrix.SubMatrix(groupList[j - i], groupList[j]))
-                        && Matrix<double>.IsZero(matrix.SubMatrix(groupList[j], groupList[j - i]))) continue;
+                    if (DoubleMatrix.IsZero(matrix.SubMatrix(groupList[i], groupList[j]))
+                        && DoubleMatrix.IsZero(matrix.SubMatrix(groupList[j], groupList[i]))) continue;
 
                     // Если существует путь между двумя группами
                     // то объединяем группы в одну
-                    groupList[j - i].AddRange(groupList[j]);
-                    groupList.RemoveAt(j);
-                    Debug.WriteLine("Группа {0} присоеденена к группе {1}", j, j - i);
-                    i = groupList.Count;
+                    groupList[j].AddRange(groupList[i]);
+                    groupList.RemoveAt(i);
+                    Debug.WriteLine("Группа {0} присоеденена к группе {1}", i, j);
                     break;
                 }
             }
             Console.WriteLine("Обнаружено {0} групп", groupList.Count);
+
 #if DEBUG
             for (int i = 0; i < groupList.Count; i++)
             {
@@ -150,16 +150,16 @@ namespace Article105
 
                     Console.WriteLine("Анализируется группа из {0} участников", n);
 
-                    var e = new Matrix<double>(n, n);
+                    var e = new DoubleMatrix(n, n);
                     for (int i = 0; i < n; i++) e[i][i] = 1.0;
 
                     // Получение выборки из исходной матрицы E-A
-                    Matrix<double> a = matrix.SubMatrix(group, group);
-                    Matrix<double> b = e - a;
+                    DoubleMatrix a = matrix.SubMatrix(group, group);
+                    DoubleMatrix b = e - a;
 
 #if DEBUG
                     // Сохраняем матрицу для дальнейшей самопроверки
-                    var z = new Matrix<double>(b.Select(row => new Vector<double>(row)));
+                    var z = new DoubleMatrix(b.Select(row => new DoubleVector(row)));
                     Debug.Assert(z.Rows == n);
                     Debug.Assert(z.Columns == n);
 #endif
@@ -173,29 +173,29 @@ namespace Article105
 
                     // Приведение выборки к каноническому виду преобразованиями по строкам
                     b.GaussJordan(
-                        Matrix<double>.Search.SearchByRows,
-                        Matrix<double>.Transform.TransformByRows,
+                        DoubleMatrix.Search.SearchByRows,
+                        DoubleMatrix.Transform.TransformByRows,
                         0, n);
 
-                    Debug.Assert(b.All(row => !Vector<double>.IsZero(new Vector<double>(row.GetRange(0, n)))));
+                    Debug.Assert(b.All(row => !DoubleVector.IsZero(new DoubleVector(row.GetRange(0, n)))));
 
                     // Сортировка строк для приведения канонической матрицы к единичной матрице
-                    var dic = new Dictionary<int, Vector<double>>();
+                    var dic = new Dictionary<int, DoubleVector>();
                     for (int i = 0; i < n; i++)
                     {
                         int j = 0;
-                        Vector<double> vector = b[i];
-                        while (Vector<double>.IsZero(vector[j])) j++;
+                        DoubleVector vector = b[i];
+                        while (DoubleVector.IsZero(vector[j])) j++;
                         dic.Add(j, vector);
                     }
 
                     // Получение обратной матрицы для E-A
-                    var c = new Matrix<double>();
-                    for (int i = 0; i < n; i++) c.Add(new Vector<double>(dic[i].GetRange(n, n)));
+                    var c = new DoubleMatrix();
+                    for (int i = 0; i < n; i++) c.Add(new DoubleVector(dic[i].GetRange(n, n)));
 
 #if DEBUG
                     // Проверяем, что полученная матрица действительно является обратной
-                    Matrix<double> y = c*z;
+                    DoubleMatrix y = c*z;
                     Debug.Assert(y.Rows == n);
                     Debug.Assert(y.Columns == n);
                     for (int i = 0; i < n; i++)
@@ -231,7 +231,7 @@ namespace Article105
                         for (int j = 0; j < n; j++)
                         {
                             if (i == j) continue;
-                            if (Matrix<double>.IsZero(c[i][j])) continue;
+                            if (DoubleMatrix.IsZero(c[i][j])) continue;
 
                             // Сохранение полей в том же формате, что и исходные данные
                             writer.Write(nodeList[group[i]]);

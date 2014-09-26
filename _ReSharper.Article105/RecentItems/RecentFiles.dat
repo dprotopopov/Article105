@@ -1,41 +1,26 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:BigInt.cs" caret="16861" fromTop="7" />
     <File id="E80CF993-5E07-4875-85FE-A2ADCF76558D/d:Types/f:Double.cs" caret="418" fromTop="18" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Vector.cs" caret="1051" fromTop="37" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="1986" fromTop="10" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="10900" fromTop="0" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Ratio.cs" caret="6432" fromTop="6" />
+    <File id="E80CF993-5E07-4875-85FE-A2ADCF76558D/d:Collections/f:SortedStackListQueue.cs" caret="5306" fromTop="104" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:BigInt.cs" caret="3928" fromTop="40" />
+    <File id="E80CF993-5E07-4875-85FE-A2ADCF76558D/d:Collections/f:StackListQueue.cs" caret="2270" fromTop="14" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="9469" fromTop="18" />
+    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="1635" fromTop="44" />
+    <File id="311804A4-D8FF-455D-B219-D0B08DCBC049/f:UnitTest1.cs" caret="4924" fromTop="9" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/d:GF2/f:BooleanVectorIndexOfTrueComparer.cs" caret="0" fromTop="0" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/d:GF2/f:BooleanVector.cs" caret="338" fromTop="15" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/d:GF2/f:BooleanMatrix.cs" caret="0" fromTop="0" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/d:Double/f:DoubleMatrix.cs" caret="0" fromTop="0" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/d:Double/f:DoubleVector.cs" caret="0" fromTop="0" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Vector.cs" caret="2420" fromTop="79" />
   </RecentFiles>
   <RecentEdits>
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9529" fromTop="13" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9104" fromTop="11" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9532" fromTop="21" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9409" fromTop="14" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9166" fromTop="14" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9532" fromTop="20" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9166" fromTop="11" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="5563" fromTop="20" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9530" fromTop="17" />
-    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="1986" fromTop="10" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="6" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="12" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="15" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="13" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="30" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="16" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="16" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="35" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="18" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="27" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="15277" fromTop="400" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="10869" fromTop="13" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="12087" fromTop="21" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="10126" fromTop="16" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="11833" fromTop="5" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="13186" fromTop="18" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="13761" fromTop="19" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="12886" fromTop="35" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="12550" fromTop="26" />
-    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Matrix.cs" caret="10467" fromTop="13" />
+    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="9765" fromTop="17" />
+    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="8127" fromTop="24" />
+    <File id="DDA2232D-61AF-49CD-8157-9F00FC06D264/f:Program.cs" caret="306" fromTop="11" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Vector.cs" caret="101" fromTop="4" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Vector.cs" caret="2038" fromTop="7" />
+    <File id="5F759E1E-27BB-4127-AE22-D220F6AFBC71/f:Vector.cs" caret="2156" fromTop="10" />
   </RecentEdits>
 </RecentFiles>

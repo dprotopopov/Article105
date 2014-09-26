@@ -56,4 +56,6 @@
   <Module PersistentId="System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, mvid=0c3429b4-f939-4909-8cee-a45ed31ca793" ModuleId="System.ServiceProcess" />
   <Module PersistentId="System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, mvid=a5e90307-85f1-44ad-8033-20f592b3d353" ModuleId="System.Configuration.Install" />
   <Module PersistentId="System.Dynamic, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, mvid=ce1f1035-116b-4d96-ba5c-b92a03d1ad6b" ModuleId="System.Dynamic" />
+  <Module PersistentId="311804A4-D8FF-455D-B219-D0B08DCBC049" ModuleId="MyMath.UnitTest" />
+  <Module PersistentId="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, mvid=f644d728-c1f1-48ef-b944-a5d0a59ded82" ModuleId="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
 </Modules>
